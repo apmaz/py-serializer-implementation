@@ -19,4 +19,3 @@ def deserialize_car_object(json: bytes) -> Car:
     if serializer.is_valid():
         return Car(**serializer.validated_data)
     return serializer.errors
-
